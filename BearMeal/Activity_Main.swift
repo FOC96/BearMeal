@@ -31,16 +31,16 @@ class Activity_Main: UIViewController, UINavigationControllerDelegate, UIImagePi
         self.navigationController?.navigationBar.layer.masksToBounds = false
         self.navigationController?.navigationBar.shadowImage = UIImage()
         
-        // TabBar
-        self.tabBarController?.tabBar.layer.shadowColor = UIColor.black.cgColor
-        self.tabBarController?.tabBar.layer.shadowOffset = CGSize(width: 0.0, height: 3.0)
-        self.tabBarController?.tabBar.layer.shadowRadius = 6
-        self.tabBarController?.tabBar.layer.shadowOpacity = 0.15
-        self.tabBarController?.tabBar.layer.borderWidth = 0.50
-        self.tabBarController?.tabBar.layer.borderColor = UIColor.white.cgColor
-        self.tabBarController?.tabBar.clipsToBounds = true
-        self.tabBarController?.tabBar.backgroundColor = UIColor.white
-        self.tabBarController?.tabBar.shadowImage = UIImage()
+//        // TabBar
+//        self.tabBarController?.tabBar.layer.shadowColor = UIColor.black.cgColor
+//        self.tabBarController?.tabBar.layer.shadowOffset = CGSize(width: 0.0, height: 3.0)
+//        self.tabBarController?.tabBar.layer.shadowRadius = 6
+//        self.tabBarController?.tabBar.layer.shadowOpacity = 0.15
+//        self.tabBarController?.tabBar.layer.borderWidth = 0.50
+//        self.tabBarController?.tabBar.layer.borderColor = UIColor.white.cgColor
+//        self.tabBarController?.tabBar.clipsToBounds = true
+//        self.tabBarController?.tabBar.backgroundColor = UIColor.white
+//        self.tabBarController?.tabBar.shadowImage = UIImage()
         
         
         // Card design (shadow)

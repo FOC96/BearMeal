@@ -9,31 +9,30 @@
 import UIKit
 
 @IBDesignable
-class Menus: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate  {
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return diningHallsArray.count
-    }
+class Menus: UIViewController  {
     
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return diningHallsArray[row]
-    }
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    @IBOutlet weak var dHPicker: UIPickerView!
     let diningHallsArray = ["Holmes", "Tobey-Kendel", "University Center"]
+    // Cards (Views)
+    @IBOutlet weak var firstCard: UIView!
+    @IBOutlet weak var secondCard: UIView!
+    @IBOutlet weak var thirdCard: UIView!
+    // Contents
+    @IBOutlet weak var firstContent: UILabel!
+    @IBOutlet weak var secondContent: UILabel!
+    @IBOutlet weak var thirdContent: UILabel!
+    // Titles
+    @IBOutlet weak var firstTitle: UILabel!
+    @IBOutlet weak var secondTitle: UILabel!
+    @IBOutlet weak var thirdTitle: UILabel!
+    // Hours of Operation
+    @IBOutlet weak var firstHours: UILabel!
+    @IBOutlet weak var secondHours: UILabel!
+    @IBOutlet weak var thirdHours: UILabel!
     
-    @IBOutlet weak var breakfastView: UIView!
-    @IBOutlet weak var lunchView: UIView!
-    @IBOutlet weak var dinnerView: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dHPicker.delegate = self
-        dHPicker.dataSource = self
         
         design()
     }
@@ -55,24 +54,23 @@ class Menus: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate  {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.largeTitleDisplayMode = .automatic
         
-        breakfastView.layer.shadowOpacity = 0.12
-        breakfastView.layer.shadowRadius = 8
-        breakfastView.layer.shadowOffset = CGSize.zero
-        breakfastView.layer.cornerRadius = 12
-        breakfastView.layer.shadowColor = UIColor.black.cgColor
+        firstCard.layer.shadowOpacity = 0.12
+        firstCard.layer.shadowRadius = 8
+        firstCard.layer.shadowOffset = CGSize.zero
+        firstCard.layer.cornerRadius = 12
+        firstCard.layer.shadowColor = UIColor.black.cgColor
         
-        lunchView.layer.shadowOpacity = 0.12
-        lunchView.layer.shadowRadius = 8
-        lunchView.layer.shadowOffset = CGSize.zero
-        lunchView.layer.cornerRadius = 12
-        lunchView.layer.shadowColor = UIColor.black.cgColor
+        secondCard.layer.shadowOpacity = 0.12
+        secondCard.layer.shadowRadius = 8
+        secondCard.layer.shadowOffset = CGSize.zero
+        secondCard.layer.cornerRadius = 12
+        secondCard.layer.shadowColor = UIColor.black.cgColor
         
-        dinnerView.layer.shadowOpacity = 0.12
-        dinnerView.layer.shadowRadius = 8
-        dinnerView.layer.shadowOffset = CGSize.zero
-        dinnerView.layer.cornerRadius = 12
-        dinnerView.layer.shadowColor = UIColor.black.cgColor
-        
+        thirdCard.layer.shadowOpacity = 0.12
+        thirdCard.layer.shadowRadius = 8
+        thirdCard.layer.shadowOffset = CGSize.zero
+        thirdCard.layer.cornerRadius = 12
+        thirdCard.layer.shadowColor = UIColor.black.cgColor
         
     }
     
@@ -88,6 +86,24 @@ class Menus: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate  {
         }
     }
     
+    
+//    func getInfo() {
+//        let url = URL(string: "http://www.unco.edu/dining/dining-menus/holmes.aspx")
+//        let request = NSMutableURLRequest(url: url!)
+//
+//        let task = URLSession.shared.dataTask(with: request as URLRequest) {
+//            data, response, error in
+//            if error != nil {
+//                print(error as Any)
+//            } else {
+//                if let unwrappedData = data {
+//                    let dataString = NSString(data: unwrappedData, encoding: String.Encoding.utf8.rawValue)
+//                    let stringSeparator =
+//                }
+//            }
+//        }
+//
+//    }
     
     /*
     // MARK: - Navigation
