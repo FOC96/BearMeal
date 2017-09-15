@@ -52,7 +52,6 @@ class Menus: UIViewController  {
         self.navigationController?.navigationBar.layer.masksToBounds = false
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.largeTitleDisplayMode = .automatic
         
         firstCard.layer.shadowOpacity = 0.12
         firstCard.layer.shadowRadius = 8
@@ -71,39 +70,8 @@ class Menus: UIViewController  {
         thirdCard.layer.shadowOffset = CGSize.zero
         thirdCard.layer.cornerRadius = 12
         thirdCard.layer.shadowColor = UIColor.black.cgColor
-        
     }
     
-    @objc func animation() {
-
-    }
-    
-    @objc func cardTapped(UITGR : UITapGestureRecognizer) {
-        UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseInOut, animations: {
-//            self.breakfastView.transform = CGAffineTransform(scaleX: 0.99, y: 0.99)
-        }) { (success) in
-//            self.breakfastView.transform = CGAffineTransform.identity
-        }
-    }
-    
-    
-//    func getInfo() {
-//        let url = URL(string: "http://www.unco.edu/dining/dining-menus/holmes.aspx")
-//        let request = NSMutableURLRequest(url: url!)
-//
-//        let task = URLSession.shared.dataTask(with: request as URLRequest) {
-//            data, response, error in
-//            if error != nil {
-//                print(error as Any)
-//            } else {
-//                if let unwrappedData = data {
-//                    let dataString = NSString(data: unwrappedData, encoding: String.Encoding.utf8.rawValue)
-//                    let stringSeparator =
-//                }
-//            }
-//        }
-//
-//    }
     
     /*
     // MARK: - Navigation

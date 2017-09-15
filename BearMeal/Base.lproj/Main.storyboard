@@ -294,19 +294,12 @@
                     <navigationItem key="navigationItem" title="Dining Menus" id="vuy-Xf-bky"/>
                     <size key="freeformSize" width="375" height="1500"/>
                     <connections>
-                        <outlet property="breakfastContent" destination="scH-oF-Cyy" id="Tou-mf-RmH"/>
-                        <outlet property="breakfastView" destination="R7K-jZ-pkR" id="3Y9-GA-Vm7"/>
-                        <outlet property="dinnerContent" destination="Hxo-Dc-NHp" id="oa4-cU-g9u"/>
-                        <outlet property="dinnerView" destination="Kwf-5c-ZgC" id="mCa-hq-2Z7"/>
                         <outlet property="firstCard" destination="R7K-jZ-pkR" id="Sbw-OY-gVD"/>
                         <outlet property="firstContent" destination="scH-oF-Cyy" id="0Ig-8O-T7l"/>
                         <outlet property="firstHours" destination="B3R-iD-q6A" id="Nwo-mR-cMi"/>
                         <outlet property="firstTitle" destination="dgo-26-MYa" id="1fL-DU-sdM"/>
-                        <outlet property="lunchContent" destination="5sX-dk-boo" id="5dM-Zf-f2s"/>
-                        <outlet property="lunchView" destination="XAy-r4-04B" id="kau-dm-wgR"/>
                         <outlet property="secondCard" destination="XAy-r4-04B" id="q9u-4H-qPC"/>
                         <outlet property="secondContent" destination="5sX-dk-boo" id="4rf-lw-VH6"/>
-                        <outlet property="secondHour" destination="AIH-gZ-evW" id="gIL-wd-07E"/>
                         <outlet property="secondHours" destination="AIH-gZ-evW" id="8wF-xS-9k1"/>
                         <outlet property="secondTitle" destination="qlb-dA-7TV" id="E31-sp-Z4T"/>
                         <outlet property="thirdCard" destination="Kwf-5c-ZgC" id="mS3-r8-jda"/>
@@ -317,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IPA-0U-IKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1969" y="-460"/>
+            <point key="canvasLocation" x="1607" y="-31"/>
         </scene>
         <!--Settings-->
         <scene sceneID="HpP-El-3T9">
@@ -341,7 +334,7 @@
         <!--Settings-->
         <scene sceneID="XX4-jA-gyo">
             <objects>
-                <viewController id="riM-OP-OOq" customClass="MainSettings" customModule="BearMeal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="riM-OP-OOq" customClass="MainSettings" customModule="BearMeal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jNf-nL-wl2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -379,7 +372,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHB-4M-bFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1410" y="1084"/>
+            <point key="canvasLocation" x="1529" y="1084"/>
         </scene>
         <!--About Me-->
         <scene sceneID="9PF-Py-xgD">
@@ -421,7 +414,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p6l-nU-eYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2237.5999999999999" y="1083.5082458770617"/>
+            <point key="canvasLocation" x="2441" y="1084"/>
         </scene>
         <!--Meal Plan-->
         <scene sceneID="dr4-Cu-kin">
@@ -437,7 +430,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ysv-3p-5OE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1409" y="1812"/>
+            <point key="canvasLocation" x="2441" y="1791"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eki-eR-Gzi">
