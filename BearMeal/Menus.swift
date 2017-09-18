@@ -53,21 +53,21 @@ class Menus: UIViewController  {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
-        firstCard.layer.shadowOpacity = 0.12
-        firstCard.layer.shadowRadius = 8
-        firstCard.layer.shadowOffset = CGSize.zero
+        firstCard.layer.shadowOpacity = 0.08
+        firstCard.layer.shadowRadius = 6
+        firstCard.layer.shadowOffset = CGSize(width: 0.0, height: 12.0)
         firstCard.layer.cornerRadius = 12
         firstCard.layer.shadowColor = UIColor.black.cgColor
         
-        secondCard.layer.shadowOpacity = 0.12
-        secondCard.layer.shadowRadius = 8
-        secondCard.layer.shadowOffset = CGSize.zero
+        secondCard.layer.shadowOpacity = 0.08
+        secondCard.layer.shadowRadius = 6
+        secondCard.layer.shadowOffset = CGSize(width: 0.0, height: 12.0)
         secondCard.layer.cornerRadius = 12
         secondCard.layer.shadowColor = UIColor.black.cgColor
         
-        thirdCard.layer.shadowOpacity = 0.12
-        thirdCard.layer.shadowRadius = 8
-        thirdCard.layer.shadowOffset = CGSize.zero
+        thirdCard.layer.shadowOpacity = 0.08
+        thirdCard.layer.shadowRadius = 6
+        thirdCard.layer.shadowOffset = CGSize(width: 0.0, height: 12.0)
         thirdCard.layer.cornerRadius = 12
         thirdCard.layer.shadowColor = UIColor.black.cgColor
     }
