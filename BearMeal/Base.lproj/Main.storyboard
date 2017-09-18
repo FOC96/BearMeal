@@ -44,25 +44,25 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="1136"/>
                                 <subviews>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bearID" translatesAutoresizingMaskIntoConstraints="NO" id="9jv-mD-QQZ">
-                                        <rect key="frame" x="16" y="30" width="343" height="201"/>
+                                        <rect key="frame" x="16" y="25" width="343" height="201"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="9jv-mD-QQZ" secondAttribute="height" multiplier="343:201" id="HfE-ga-PqC"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="firstName lastName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uh3-xD-zSi">
-                                        <rect key="frame" x="36" y="162" width="172" height="21"/>
+                                        <rect key="frame" x="36" y="157" width="172" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bearNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmJ-Xq-HxN">
-                                        <rect key="frame" x="36" y="184" width="91" height="20"/>
+                                        <rect key="frame" x="36" y="179" width="91" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6y-rZ-est">
-                                        <rect key="frame" x="16" y="261" width="100" height="100"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6y-rZ-est" customClass="CardsDesign" customModule="BearMeal" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="256" width="100" height="100"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Meals" translatesAutoresizingMaskIntoConstraints="NO" id="wrV-BK-Ihm">
                                                 <rect key="frame" x="15" y="15" width="70" height="70"/>
@@ -80,8 +80,8 @@
                                             <constraint firstAttribute="bottom" secondItem="wrV-BK-Ihm" secondAttribute="bottom" constant="15" id="zKT-HL-ie8"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2Q-8b-p7V">
-                                        <rect key="frame" x="138" y="261" width="100" height="100"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2Q-8b-p7V" customClass="CardsDesign" customModule="BearMeal" customModuleProvider="target">
+                                        <rect key="frame" x="138" y="256" width="100" height="100"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BonusMeals" translatesAutoresizingMaskIntoConstraints="NO" id="hPF-9X-lpY">
                                                 <rect key="frame" x="15" y="15" width="70" height="70"/>
@@ -99,8 +99,8 @@
                                             <constraint firstAttribute="width" secondItem="C2Q-8b-p7V" secondAttribute="height" multiplier="1:1" id="fKa-E8-g0O"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVe-1p-EnF">
-                                        <rect key="frame" x="259" y="261" width="100" height="100"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVe-1p-EnF" customClass="CardsDesign" customModule="BearMeal" customModuleProvider="target">
+                                        <rect key="frame" x="259" y="256" width="100" height="100"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiningDollars" translatesAutoresizingMaskIntoConstraints="NO" id="Zbh-Ie-Vx1">
                                                 <rect key="frame" x="15" y="15" width="70" height="70"/>
@@ -118,8 +118,8 @@
                                             <constraint firstItem="Zbh-Ie-Vx1" firstAttribute="leading" secondItem="GVe-1p-EnF" secondAttribute="leading" constant="15" id="tOA-xZ-CyD"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D31-O0-mgJ">
-                                        <rect key="frame" x="16" y="391" width="343" height="200"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D31-O0-mgJ" customClass="CardsDesign" customModule="BearMeal" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="386" width="343" height="200"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RECENT RECORDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf5-S4-2JE">
                                                 <rect key="frame" x="14" y="16" width="315" height="18"/>
@@ -184,8 +184,8 @@
                                             <constraint firstAttribute="height" constant="200" id="cWn-cF-mcn"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seq-br-8yz">
-                                        <rect key="frame" x="16" y="621" width="343" height="200"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seq-br-8yz" customClass="CardsDesign" customModule="BearMeal" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="616" width="343" height="200"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RECENT RECORDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCS-Be-FN0">
                                                 <rect key="frame" x="14" y="16" width="315" height="18"/>
@@ -250,8 +250,8 @@
                                             <constraint firstAttribute="height" constant="200" id="cka-bO-Sah"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOO-j0-kja">
-                                        <rect key="frame" x="16" y="851" width="343" height="200"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOO-j0-kja" customClass="CardsDesign" customModule="BearMeal" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="846" width="343" height="200"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RECENT RECORDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sk-jy-fdH">
                                                 <rect key="frame" x="14" y="16" width="315" height="18"/>
@@ -317,7 +317,7 @@
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Phz-7s-QC4">
-                                        <rect key="frame" x="264" y="47" width="80" height="80"/>
+                                        <rect key="frame" x="264" y="42" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="Uzb-WM-nvG"/>
                                             <constraint firstAttribute="width" constant="80" id="ZCG-PF-20f"/>
@@ -331,7 +331,7 @@
                                     <constraint firstItem="seq-br-8yz" firstAttribute="leading" secondItem="BI8-1U-Egf" secondAttribute="leading" constant="16" id="3kY-EP-0as"/>
                                     <constraint firstItem="D31-O0-mgJ" firstAttribute="centerX" secondItem="BI8-1U-Egf" secondAttribute="centerX" id="4KL-uL-sIW"/>
                                     <constraint firstItem="seq-br-8yz" firstAttribute="centerX" secondItem="BI8-1U-Egf" secondAttribute="centerX" id="4bN-1U-PmN"/>
-                                    <constraint firstItem="9jv-mD-QQZ" firstAttribute="top" secondItem="BI8-1U-Egf" secondAttribute="top" constant="30" id="53P-7T-AEt"/>
+                                    <constraint firstItem="9jv-mD-QQZ" firstAttribute="top" secondItem="BI8-1U-Egf" secondAttribute="top" constant="25" id="53P-7T-AEt"/>
                                     <constraint firstItem="seq-br-8yz" firstAttribute="top" secondItem="D31-O0-mgJ" secondAttribute="bottom" constant="30" id="82b-lO-C4r"/>
                                     <constraint firstAttribute="trailing" secondItem="9jv-mD-QQZ" secondAttribute="trailing" constant="16" id="9tk-Yi-sFq"/>
                                     <constraint firstItem="9jv-mD-QQZ" firstAttribute="top" secondItem="Phz-7s-QC4" secondAttribute="bottom" constant="-97" id="ANN-vq-BJA"/>
@@ -431,7 +431,7 @@
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <state key="normal" title="Date"/>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7K-jZ-pkR">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7K-jZ-pkR" customClass="CardsDesign" customModule="BearMeal" customModuleProvider="target">
                                         <rect key="frame" x="16" y="141" width="343" height="213.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgo-26-MYa">
@@ -468,7 +468,7 @@
                                             <constraint firstAttribute="trailing" secondItem="scH-oF-Cyy" secondAttribute="trailing" constant="18" id="unI-Sh-WNi"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAy-r4-04B">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAy-r4-04B" customClass="CardsDesign" customModule="BearMeal" customModuleProvider="target">
                                         <rect key="frame" x="16" y="384.5" width="343" height="335"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlb-dA-7TV">
@@ -505,7 +505,7 @@
                                             <constraint firstItem="5sX-dk-boo" firstAttribute="leading" secondItem="XAy-r4-04B" secondAttribute="leading" constant="18" id="zmG-m5-4Ab"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kwf-5c-ZgC">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kwf-5c-ZgC" customClass="CardsDesign" customModule="BearMeal" customModuleProvider="target">
                                         <rect key="frame" x="16" y="749.5" width="343" height="436.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dinner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4a-ea-ozm">

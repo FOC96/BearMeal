@@ -19,7 +19,6 @@ class ActivityViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        design()
         
         let tappedImage = UITapGestureRecognizer(target: self, action: #selector(ActivityViewController.imageWasTapped(tapGestureRecognizer: )))
         bearID.addGestureRecognizer(tappedImage)
@@ -30,19 +29,6 @@ class ActivityViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    func design() {
-        // Nav Bar
-        navigationController?.navigationBar.prefersLargeTitles = true
-        
-        // Card design (shadow)
-        bearID.layer.shadowColor = UIColor.black.cgColor
-        bearID.layer.shadowOffset = CGSize(width: 0, height: 8)
-        bearID.layer.shadowRadius = 6
-        bearID.layer.shadowOpacity = 0.25
-        
-        //Card info
-    }
     
     @objc func imageWasTapped(tapGestureRecognizer : UITapGestureRecognizer) {
         UIView.animate(withDuration: 0.25, delay: 0, options: .curveEaseOut, animations: {

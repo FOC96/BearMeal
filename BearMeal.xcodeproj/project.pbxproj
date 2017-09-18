@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BC2E37B61F677E3900252EC7 /* Activity_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2E37B51F677E3900252EC7 /* Activity_Main.swift */; };
 		BC2E37B81F6790F400252EC7 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2E37B71F6790F400252EC7 /* General.swift */; };
+		BC375E971F6F88E700D65ACD /* CardsDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC375E961F6F88E700D65ACD /* CardsDesign.swift */; };
+		BC375E991F6F8B1000D65ACD /* NavBarDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC375E981F6F8B1000D65ACD /* NavBarDesign.swift */; };
 		BC3C755E1F66587500C5B031 /* MainSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C755D1F66587500C5B031 /* MainSettings.swift */; };
 		BCB1678D1F63C0F200988C09 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB1678C1F63C0F200988C09 /* ActivityViewController.swift */; };
 		BCE956A41F66525300A39973 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE956A31F66525300A39973 /* SettingsViewController.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		BC2E37B51F677E3900252EC7 /* Activity_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity_Main.swift; sourceTree = "<group>"; };
 		BC2E37B71F6790F400252EC7 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = General.swift; path = BearMeal/General.swift; sourceTree = "<group>"; };
+		BC375E961F6F88E700D65ACD /* CardsDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDesign.swift; sourceTree = "<group>"; };
+		BC375E981F6F8B1000D65ACD /* NavBarDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarDesign.swift; sourceTree = "<group>"; };
 		BC3C755D1F66587500C5B031 /* MainSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettings.swift; sourceTree = "<group>"; };
 		BCB1678C1F63C0F200988C09 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityViewController.swift; path = BearMeal/ActivityViewController.swift; sourceTree = "<group>"; };
 		BCE956A31F66525300A39973 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = BearMeal/SettingsViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				BCEEE9001F62ECB800E7BE56 /* AppDelegate.swift */,
 				BCEEE9021F62ECB800E7BE56 /* ViewController.swift */,
 				BCEEE9041F62ECB800E7BE56 /* Main.storyboard */,
+				BC375E981F6F8B1000D65ACD /* NavBarDesign.swift */,
+				BC375E961F6F88E700D65ACD /* CardsDesign.swift */,
 				BC2E37B51F677E3900252EC7 /* Activity_Main.swift */,
 				BC3C755D1F66587500C5B031 /* MainSettings.swift */,
 				BCEEE9151F6345AE00E7BE56 /* Menus.swift */,
@@ -160,8 +166,10 @@
 				BCEEE9031F62ECB800E7BE56 /* ViewController.swift in Sources */,
 				BCB1678D1F63C0F200988C09 /* ActivityViewController.swift in Sources */,
 				BC3C755E1F66587500C5B031 /* MainSettings.swift in Sources */,
+				BC375E991F6F8B1000D65ACD /* NavBarDesign.swift in Sources */,
 				BC2E37B81F6790F400252EC7 /* General.swift in Sources */,
 				BCEEE9011F62ECB800E7BE56 /* AppDelegate.swift in Sources */,
+				BC375E971F6F88E700D65ACD /* CardsDesign.swift in Sources */,
 				BCEEE9161F6345AE00E7BE56 /* Menus.swift in Sources */,
 				BCEEE9091F62ECB800E7BE56 /* BearMeal.xcdatamodeld in Sources */,
 				BCE956A41F66525300A39973 /* SettingsViewController.swift in Sources */,
