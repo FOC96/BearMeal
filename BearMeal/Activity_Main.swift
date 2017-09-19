@@ -8,6 +8,10 @@
 
 import UIKit
 
+var mealsUsed : Int = 0
+var bonusUsed : Int = 0
+var dollarUsed : Double = 0.0
+
 class Activity_Main: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
 //  VISUAL ELEMENTS
@@ -15,9 +19,19 @@ class Activity_Main: UIViewController, UINavigationControllerDelegate, UIImagePi
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var bearNumberLabel: UILabel!
     @IBOutlet weak var userPicture: UIImageView!
+    //Buttons
+    @IBOutlet weak var mealsButton: CardsDesign!
+    @IBOutlet weak var bonusMealsButton: CardsDesign!
+    @IBOutlet weak var diningDollarsButton: CardsDesign!
+    // Cards
+    @IBOutlet weak var MealsView: CardsDesign!
+    @IBOutlet weak var BonusView: CardsDesign!
+    @IBOutlet weak var diningView: CardsDesign!
+    // Totals
+    @IBOutlet weak var mealsTotal: UILabel!
+    @IBOutlet weak var bonusTotal: UILabel!
+    @IBOutlet weak var diningTotal: UILabel!
     
-//  TOOLS
-    var imagePicker = UIImagePickerController()
     
     
     func design() {
@@ -31,26 +45,28 @@ class Activity_Main: UIViewController, UINavigationControllerDelegate, UIImagePi
         self.navigationController?.navigationBar.layer.masksToBounds = false
         self.navigationController?.navigationBar.shadowImage = UIImage()
         
-//        // TabBar
-//        self.tabBarController?.tabBar.layer.shadowColor = UIColor.black.cgColor
-//        self.tabBarController?.tabBar.layer.shadowOffset = CGSize(width: 0.0, height: 3.0)
-//        self.tabBarController?.tabBar.layer.shadowRadius = 6
-//        self.tabBarController?.tabBar.layer.shadowOpacity = 0.15
-//        self.tabBarController?.tabBar.layer.borderWidth = 0.50
-//        self.tabBarController?.tabBar.layer.borderColor = UIColor.white.cgColor
-//        self.tabBarController?.tabBar.clipsToBounds = true
-//        self.tabBarController?.tabBar.backgroundColor = UIColor.white
-//        self.tabBarController?.tabBar.shadowImage = UIImage()
-        
-        
         // Card design (shadow)
-        bearCard.layer.shadowColor = UIColor.black.cgColor
-        bearCard.layer.shadowOffset = CGSize(width: 0, height: 8)
+        bearCard.layer.shadowOpacity = 0.08
         bearCard.layer.shadowRadius = 6
-        bearCard.layer.shadowOpacity = 0.25
+        bearCard.layer.shadowOffset = CGSize(width: 0.0, height: 12.0)
+        bearCard.layer.cornerRadius = 12
+        bearCard.layer.shadowColor = UIColor.black.cgColor
         
         // Card info
         showCardInfo()
+        
+        let buttonTapped = UITapGestureRecognizer(target: self, action: #selector(Activity_Main.showAdd(tapGestureRecognizer: )))
+        buttonTapped.numberOfTapsRequired = 1
+        mealsButton.addGestureRecognizer(buttonTapped)
+        bonusMealsButton.addGestureRecognizer(buttonTapped)
+//        diningDollarsButton.addGestureRecognizer(buttonTapped)
+    }
+    
+    @objc func showAdd(tapGestureRecognizer : UITapGestureRecognizer) {
+        print("TAPPED!")
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let addNewView = storyboard.instantiateViewController(withIdentifier: "RegisterNew")
+//        self.present(addNewView, animated: true, completion: nil)
     }
     
     func animations() {
@@ -64,17 +80,22 @@ class Activity_Main: UIViewController, UINavigationControllerDelegate, UIImagePi
     }
     
     
+//  TOOLS
+    var imagePicker = UIImagePickerController()
+    
+    
+    
     func showCardInfo() {
         if let name = UserDefaults.standard.object(forKey: "name") {
             nameLabel.text = (name as! String)
         } else {
-            nameLabel.text = " "
+            nameLabel.text = "Long-press this card"
         }
         
         if let bearNumber = UserDefaults.standard.object(forKey: "bearNumber") {
             bearNumberLabel.text = (bearNumber as! String)
         } else {
-            bearNumberLabel.text = " "
+            bearNumberLabel.text = "to add your info"
         }
     }
     
@@ -172,7 +193,16 @@ class Activity_Main: UIViewController, UINavigationControllerDelegate, UIImagePi
         super.viewDidLoad()
         design()
         animations()
+        getData()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getData()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        getData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -180,7 +210,36 @@ class Activity_Main: UIViewController, UINavigationControllerDelegate, UIImagePi
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    @objc func getData() {
+        if let originalPlan = UserDefaults.standard.object(forKey: "mealPlan") as? Dictionary<String, String> {
+            if let myCurrentPlan = UserDefaults.standard.object(forKey: "currentPlan") as? Dictionary<String, String> {
+                currentPlan = myCurrentPlan
+                mealPlan = originalPlan
+                
+                let mealsLeft : Int = Int(currentPlan["Meals_Per_Week"]!)!
+                let dollarsLeft : Double = Double(currentPlan["Dining_Dollars"]!)!
+                let bonusLeft : Int = Int(currentPlan["Bonus_Meals"]!)!
+                
+                let originalMeals : Int = Int(mealPlan["Meals_Per_Week"]!)!
+                let originalDollars : Double = Double(mealPlan["Dining_Dollars"]!)!
+                let originalBonus : Int = Int(mealPlan["Bonus_Meals"]!)!
+                
+                mealsUsed = originalMeals - mealsLeft
+                bonusUsed = originalBonus - bonusLeft
+                dollarUsed = originalDollars - dollarsLeft
+                
+                
+                mealsTotal.text = "\(mealsUsed)/\(originalMeals)"
+                bonusTotal.text = "\(bonusUsed)/\(originalBonus)"
+                diningTotal.text = "\(dollarUsed)"
+                
+            }
+        }
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 

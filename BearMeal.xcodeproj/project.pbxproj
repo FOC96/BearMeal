@@ -10,9 +10,7 @@
 		BC2E37B61F677E3900252EC7 /* Activity_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2E37B51F677E3900252EC7 /* Activity_Main.swift */; };
 		BC2E37B81F6790F400252EC7 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2E37B71F6790F400252EC7 /* General.swift */; };
 		BC375E971F6F88E700D65ACD /* CardsDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC375E961F6F88E700D65ACD /* CardsDesign.swift */; };
-		BC375E991F6F8B1000D65ACD /* NavBarDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC375E981F6F8B1000D65ACD /* NavBarDesign.swift */; };
 		BC3C755E1F66587500C5B031 /* MainSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C755D1F66587500C5B031 /* MainSettings.swift */; };
-		BCB1678D1F63C0F200988C09 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB1678C1F63C0F200988C09 /* ActivityViewController.swift */; };
 		BCE956A41F66525300A39973 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE956A31F66525300A39973 /* SettingsViewController.swift */; };
 		BCEEE9011F62ECB800E7BE56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEE9001F62ECB800E7BE56 /* AppDelegate.swift */; };
 		BCEEE9031F62ECB800E7BE56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEE9021F62ECB800E7BE56 /* ViewController.swift */; };
@@ -27,9 +25,7 @@
 		BC2E37B51F677E3900252EC7 /* Activity_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity_Main.swift; sourceTree = "<group>"; };
 		BC2E37B71F6790F400252EC7 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = General.swift; path = BearMeal/General.swift; sourceTree = "<group>"; };
 		BC375E961F6F88E700D65ACD /* CardsDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDesign.swift; sourceTree = "<group>"; };
-		BC375E981F6F8B1000D65ACD /* NavBarDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarDesign.swift; sourceTree = "<group>"; };
 		BC3C755D1F66587500C5B031 /* MainSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettings.swift; sourceTree = "<group>"; };
-		BCB1678C1F63C0F200988C09 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityViewController.swift; path = BearMeal/ActivityViewController.swift; sourceTree = "<group>"; };
 		BCE956A31F66525300A39973 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = BearMeal/SettingsViewController.swift; sourceTree = "<group>"; };
 		BCEEE8FD1F62ECB800E7BE56 /* BearMeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BearMeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEEE9001F62ECB800E7BE56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +54,6 @@
 			children = (
 				BC2E37B71F6790F400252EC7 /* General.swift */,
 				BCE956A31F66525300A39973 /* SettingsViewController.swift */,
-				BCB1678C1F63C0F200988C09 /* ActivityViewController.swift */,
 				BCEEE8FF1F62ECB800E7BE56 /* BearMeal */,
 				BCEEE8FE1F62ECB800E7BE56 /* Products */,
 			);
@@ -78,7 +73,6 @@
 				BCEEE9001F62ECB800E7BE56 /* AppDelegate.swift */,
 				BCEEE9021F62ECB800E7BE56 /* ViewController.swift */,
 				BCEEE9041F62ECB800E7BE56 /* Main.storyboard */,
-				BC375E981F6F8B1000D65ACD /* NavBarDesign.swift */,
 				BC375E961F6F88E700D65ACD /* CardsDesign.swift */,
 				BC2E37B51F677E3900252EC7 /* Activity_Main.swift */,
 				BC3C755D1F66587500C5B031 /* MainSettings.swift */,
@@ -164,9 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCEEE9031F62ECB800E7BE56 /* ViewController.swift in Sources */,
-				BCB1678D1F63C0F200988C09 /* ActivityViewController.swift in Sources */,
 				BC3C755E1F66587500C5B031 /* MainSettings.swift in Sources */,
-				BC375E991F6F8B1000D65ACD /* NavBarDesign.swift in Sources */,
 				BC2E37B81F6790F400252EC7 /* General.swift in Sources */,
 				BCEEE9011F62ECB800E7BE56 /* AppDelegate.swift in Sources */,
 				BC375E971F6F88E700D65ACD /* CardsDesign.swift in Sources */,

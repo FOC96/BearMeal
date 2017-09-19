@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BonusMeals" representedClassName="BonusMeals" syncable="YES" codeGenerationType="class">
+        <attribute name="bonusDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="bonusDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bonusID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="DiningDollars" representedClassName="DiningDollars" syncable="YES" codeGenerationType="class">
+        <attribute name="transactionAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="transactionArticle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transactionDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="transactionID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="MealsPerWeek" representedClassName="MealsPerWeek" syncable="YES" codeGenerationType="class">
+        <attribute name="mealDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mealDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mealID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MealsPerWeek" positionX="153" positionY="-2547" width="144" height="88"/>
+        <element name="DiningDollars" positionX="484" positionY="-2547" width="128" height="103"/>
+        <element name="BonusMeals" positionX="324" positionY="-2547" width="128" height="90"/>
+    </elements>
 </model>
