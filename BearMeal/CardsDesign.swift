@@ -19,6 +19,7 @@ class CardsDesign: UIView {
         self.layer.shadowOffset = CGSize(width: 0.0, height: 12.0)
         self.layer.cornerRadius = 12
         self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.masksToBounds = true
     }
     
 

@@ -31,8 +31,9 @@ class Activity_Main: UIViewController, UINavigationControllerDelegate, UIImagePi
     @IBOutlet weak var mealsTotal: UILabel!
     @IBOutlet weak var bonusTotal: UILabel!
     @IBOutlet weak var diningTotal: UILabel!
-    
-    
+    //POP UP Constraint
+    @IBOutlet weak var popUp1Center: NSLayoutConstraint!
+    @IBOutlet weak var backgroundButton: UIButton!
     
     func design() {
         // NavBar
@@ -55,19 +56,63 @@ class Activity_Main: UIViewController, UINavigationControllerDelegate, UIImagePi
         // Card info
         showCardInfo()
         
-        let buttonTapped = UITapGestureRecognizer(target: self, action: #selector(Activity_Main.showAdd(tapGestureRecognizer: )))
-        buttonTapped.numberOfTapsRequired = 1
-        mealsButton.addGestureRecognizer(buttonTapped)
-        bonusMealsButton.addGestureRecognizer(buttonTapped)
-//        diningDollarsButton.addGestureRecognizer(buttonTapped)
+        let mealsTapped = UITapGestureRecognizer(target: self, action: #selector(Activity_Main.showAdd(tapGestureRecognizer: )))
+        mealsTapped.numberOfTapsRequired = 1
+        mealsButton.addGestureRecognizer(mealsTapped)
+        
+        let bonusTapped = UITapGestureRecognizer(target: self, action: #selector(Activity_Main.showAdd(tapGestureRecognizer: )))
+        bonusTapped.numberOfTapsRequired = 1
+        bonusMealsButton.addGestureRecognizer(bonusTapped)
+        
+        let dollarsTapped = UITapGestureRecognizer(target: self, action: #selector(Activity_Main.showAdd(tapGestureRecognizer: )))
+        dollarsTapped.numberOfTapsRequired = 1
+        diningDollarsButton.addGestureRecognizer(dollarsTapped)
     }
     
+    
+// POP UP
+    // Showing pop up in the view
     @objc func showAdd(tapGestureRecognizer : UITapGestureRecognizer) {
-        print("TAPPED!")
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let addNewView = storyboard.instantiateViewController(withIdentifier: "RegisterNew")
-//        self.present(addNewView, animated: true, completion: nil)
+        popUp1Center.constant = 0
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+            self.backgroundButton.alpha = 0.4
+            let screenSize: CGRect = UIScreen.main.bounds
+            self.backgroundButton.frame.size = CGSize(width: screenSize.width, height: screenSize.height)
+            self.backgroundButton.layer.masksToBounds = false
+        }
+        
+//        let popOver = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MealsPopUp")
+//        popOver.modalPresentationStyle = .overFullScreen
+//
+//        self.present(popOver, animated: true) {
+//
+//        }
     }
+    
+    @objc func hidePopUp() {
+        popUp1Center.constant = 1000
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+            self.backgroundButton.alpha = 0
+        }
+    }
+    
+    @IBAction func registerNew(_ sender: Any) {
+        //ADD func!
+        hidePopUp()
+    }
+    
+    @IBAction func cancelPopUp(_ sender: Any) {
+        hidePopUp()
+    }
+    
+    @IBAction func backgroundTouched(_ sender: Any) {
+        hidePopUp()
+    }
+    
+    
+    
     
     func animations() {
         let tapCard = UITapGestureRecognizer(target: self, action: #selector(Activity_Main.tapOnCard(tapGestureRecognizer:)))
@@ -229,11 +274,9 @@ class Activity_Main: UIViewController, UINavigationControllerDelegate, UIImagePi
                 bonusUsed = originalBonus - bonusLeft
                 dollarUsed = originalDollars - dollarsLeft
                 
-                
                 mealsTotal.text = "\(mealsUsed)/\(originalMeals)"
                 bonusTotal.text = "\(bonusUsed)/\(originalBonus)"
-                diningTotal.text = "\(dollarUsed)"
-                
+                diningTotal.text = "$\(dollarUsed)"
             }
         }
     }
